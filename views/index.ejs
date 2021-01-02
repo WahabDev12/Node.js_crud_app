@@ -1,1 +1,51 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/app.css">
+    <script src="main.js" defer></script>
+    <script defer src="https://use.fontawesome.com/faa35b4f3b.js"></script>
+    <title>TodoList | Node.js </title>
+</head>
+<body>
+    <div class="container">
+        <small class="header-text">Minimalist TodoList</small>
+        <div class="main">
+    <form method="POST" action="/create_todos">
+        <input autocomplete="off" name="todo[title]" type="text" class="center" placeholder="Add Todo..."/>        
+        <button>Add Task</button>
+    </form>
+    </div>
+    <br>
+        <div class="todos">
+            <input id="checked" type="checkbox">
+            <small id="todo">Watch Movie</small>
+            <a class="edit"><i class="fa fa-edit"></i></a>
+            <a><i class="fa fa-trash"></i></a>
+        </div>
+        <div class="todos">
+            <input id="checked" type="checkbox">
+            <small id="todo">Read Books</small>
+            <a class="edit"><i class="fa fa-edit"></i></a>
+            <a><i class="fa fa-trash"></i></a>
+        </div>
+        <div class="todos">
+            <input id="checked" type="checkbox">
+            <small id="todo">Watch Anime</small>
+            <a  class="edit"><i class="fa fa-edit"></i></a>
+            <a><i class="fa fa-trash"></i></a>
+        </div>
+        <% for(var i=0; i<todos.length;i++) { %>
+        
+        <div class="todos">
+            <input id="checked" type="checkbox">
+            <small id="todo"><%=todos[i].title%></small>
+           <a href="/todos/<%=todos[i]._id%>/edit" class="edit"><i class="fa fa-edit"></i></a>
+            <a  href="/delete/<%= todos[i]._id %>" class="delete"><i class="fa fa-trash"></i></a>
+        </div>
+        <% } %>
+    </div>
+    <div style="height:50px;"></div>
+</body>
+</html>
