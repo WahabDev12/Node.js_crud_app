@@ -1,0 +1,103 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    background-color:rgb(221, 82, 106);
+}
+/*Border-less Input*/
+input[type=text] {
+    border: none;
+    background-color: none;
+    font-size: 15px;
+    width: 300px;
+    border-bottom: 1.5px solid blue;
+    height: 30px;
+}
+
+a{
+    color:rgb(209, 16, 16);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover{
+    color:red;
+}
+  
+input[type=text]:focus {
+    border: none;
+    background-color: none;
+    border-bottom: 1.5px solid blue;
+    outline: 0;
+    width: 300px;
+    height: 30px;
+}
+  
+.center { 
+    height: 30px;
+    width: 300px; 
+}
+
+.header-text{
+    font-size:27px;
+    font-weight:250;
+    display:flex;
+    justify-content: center;
+    margin-bottom:15px;
+    }
+  
+.main{
+    display:flex;
+    justify-content: space-between;
+    
+}
+button{
+    width:90px;
+    padding:7px;
+    border-radius:3px;
+    border-color:rgb(78, 78, 206) ;
+    outline: 0;
+    background-color:rgb(78, 78, 206);
+    color:white;
+    cursor: pointer;
+    margin-left:15px;
+}
+
+.edit{
+    color:rgb(27, 157, 209);
+}
+.edit:hover{
+    color:rgb(3, 92, 128)
+}
+.completed{
+    text-decoration:line-through;
+}
+button:hover{
+    background-color:rgb(50, 50, 199) ;
+}
+.container{
+    width:450px;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.5);
+    max-height:90%;
+    max-width: 90%;
+    padding:20px;
+    border-radius:3px;
+    background-color:white;
+    margin:auto;
+    margin-top:5rem;
+
+}
+
+.todos{
+    display:flex;
+    justify-content:space-around;
+    padding:15px;
+    border-bottom:1px solid rgb(155, 151, 151);
+    vertical-align: auto;
+
+}
