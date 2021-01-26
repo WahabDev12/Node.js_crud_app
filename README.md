@@ -5,8 +5,11 @@
 
 ### Clone this repo
 ``` git clone https://github.com/WahabDev12/Node.js_crud_app.git ```
+
+### Install required dependencies
+
 ``` npm install``` to install all required dependencies
-Install MongoDB Community Edition (instructions) and run it by executing ``` mongod ```
+Install MongoDB Community Edition ([Instructions](https://docs.mongodb.com/manual/tutorial/)) and run it by executing ``` mongod ```
 npm run dev to start the local server
 
 
