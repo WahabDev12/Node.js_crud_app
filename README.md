@@ -5,6 +5,9 @@
 ### Clone this repo
 ``` git clone https://github.com/WahabDev12/Node.js_crud_app.git ```
 
+### Go to Project directory
+``` cd Node.js_crud_app```
+
 ### Install required dependencies
 
 ``` npm install``` to install all required dependencies
